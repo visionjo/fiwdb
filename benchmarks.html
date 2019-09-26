@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0059)http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>FIW DB</title>
+  <link href="./support/css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="./support/project.css" media="screen">
+  <link rel="stylesheet" type="text/css" media="screen" href="./support/iconize.css">
+  <script src="js/htmlinclude.js" type="text/javascript"></script>
+</head>
+<body>
+<div data-include="head.html"></div>
+<div id="content">
+  <div class="section head">
+    <h1>Families In the Wild: A Kinship Recognition Benchmark</h1>
+    <div class="affiliations">
+      <a href="https://web.northeastern.edu/smilelab/">SMILE Lab, </a>
+      <a href="http://www.ece.neu.edu/">Department of Electrical and Computer Engineering, </a>
+      <a href="https://www.northeastern.edu/">Northeastern University</a>
+    </div>
+    <ul id="tabs">
+      <li><a href="./index.html" name="#tab1">Home</a></li>
+      <li><a href="./database.html" name="#tab2">Database</a></li>
+      <li><a href="./databasebrowser.html" name="#tab3">Dataset Browser</a></li>
+      <li><a href="./benchmarks.html" name="#tab4">Results</a></li>
+      <li><a href="./publications.html" name="#tab5">Papers</a></li>
+      <li><a href="./download.html" name="#tab6">Download</a></li>
+      <li><a href="./people.html" name="#tab7">Team</a></li>
+    </ul>
+  </div>
+  <div style="text-align: center;">
+    <img src="images/teaser-image.png" border="0" width="100%">
+  </div>
+  <div class="section">
+    <h2 class="header">Introduction</h2>
+    <div class="sectionBody">
+      <p>
+        FIW supports laboratory&nbsp;style evaluation protocols, <span style="color:rgb(42, 42, 42)">Kinship Verification (i.e.,&nbsp;</span>
+        <em style="color:rgb(42, 42, 42)">one-to-one</em>
+        <span style="color:rgb(42, 42, 42)">) and&nbsp;</span>
+        <span style="color:rgb(42, 42, 42); color: #2a2a2a; ">
+        Family Classification&nbsp;(i.e.,&nbsp;<em>one-to-many</em>).
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="section">
+    <h2 class="header">Kinship Verification</h2>
+    <div class="sectionBody">
+      <p>
+        Kinship verification tests were run on previously tested pairs such as siblings,
+        mother&ndash;daughter, father&ndash;son, etc. along with four newly introduced multi generational pairs
+        between
+        grandparents
+        and grandchildren in the FIW database. With the Fine-Tuned CNN model, we saw an average of a 4% increase in
+        accuracy from the VGG-Face model. The benchmark tests were completed by randomly selecting an equal number of
+        positive and negative pairs for each family, then computing cosine similarity for each pair.&nbsp;
+        <a>
+          <img src="images/veri_results.png" a alt="Picture" style="width:auto;max-width:90%"/>
+        </a> <br>Averaged verification accuracy scores (%) for 5-fold experiment on FIW. Note that there was no family
+        overlap between folds.
+      </p>
+    </div>
+  </div>
+  <div class="section">
+    <h2 class="header">Family Classification</h2>
+    <div class="sectionBody">
+      <p>
+        By fine-tuning the VGG-Face model, we achieved an average of a 1% increase in accuracy. This was accomplished
+        by
+        following the 5-fold cross-validation protocol with no family overlap on families with more than five members.
+        Folds were then made up of one member for each family and multi-class SVM was used to model VGG-Face features
+        for each family.
+        <a>
+          <img src="images/classification_results.png" alt="Picture" style="width:auto;max-width:100%"/>
+        </a>
+        <br>Family classification accuracy scores (%) using 524 families.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

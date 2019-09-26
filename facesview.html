@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>FIW DB</title>
+  <link href="./support/css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="./support/project.css" media="screen">
+  <link rel="stylesheet" type="text/css" media="screen" href="./support/iconize.css">
+  <script src="js/htmlinclude.js" type="text/javascript"></script>
+  <script src="js/togglehtml.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/database.js"></script>
+  <script type="text/javascript">
+      window.onload = function () {
+          document.getElementById("facesviewheader").innerText = "You have selected: "
+              + parseURLParams(window.location.href);
+      }
+  </script>
+</head>
+<body>
+<div data-include="head.html"></div>
+<div id="content">
+  <div class="section head">
+    <h1>Families In the Wild: A Kinship Recognition Benchmark</h1>
+    <div class="affiliations">
+      <a href="https://web.northeastern.edu/smilelab/">SMILE Lab, </a>
+      <a href="http://www.ece.neu.edu/">Department of Electrical and Computer Engineering, </a>
+      <a href="https://www.northeastern.edu/">Northeastern University</a>
+    </div>
+    <ul id="tabs">
+      <li><a href="./index.html" name="#tab1">Home</a></li>
+      <li><a href="./database.html" name="#tab2">Database</a></li>
+      <li><a href="./databasebrowser.html" name="#tab3">Dataset Browser</a></li>
+      <li><a href="./benchmarks.html" name="#tab4">Results</a></li>
+      <li><a href="./publications.html" name="#tab5">Papers</a></li>
+      <li><a href="./download.html" name="#tab6">Download</a></li>
+      <li><a href="./people.html" name="#tab7">Team</a></li>
+    </ul>
+  </div>
+  <div style="text-align: center;"><img src="images/teaser-image.png" border="0" width="100%"></div>
+  <div class="section">
+    <h2 class="header">Results</h2>
+    <div class="sectionBody">
+      <h3 id="facesviewheader">Test</h3>
+      <ul id="images">
+        <img src="./images/placeholder.png">
+        <img src="./images/placeholder.png">
+        <img src="./images/placeholder.png">
+        <img src="./images/placeholder.png">
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

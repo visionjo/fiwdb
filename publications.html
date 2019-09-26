@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0059)http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>FIW DB</title>
+  <link href="./support/css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="./support/project.css" media="screen">
+  <link rel="stylesheet" type="text/css" media="screen" href="./support/iconize.css">
+  <script src="js/htmlinclude.js" type="text/javascript"></script>
+  <script src="js/togglehtml.js" type="text/javascript"></script>
+</head>
+<body>
+<div data-include="head.html"></div>
+<div id="content">
+  <div class="section head">
+    <h1>Families In the Wild: A Kinship Recognition Benchmark</h1>
+    <div class="affiliations">
+      <a href="https://web.northeastern.edu/smilelab/">SMILE Lab, </a>
+      <a href="http://www.ece.neu.edu/">Department of Electrical and Computer Engineering, </a>
+      <a href="https://www.northeastern.edu/">Northeastern University</a>
+    </div>
+    <ul id="tabs">
+      <li><a href="./index.html" name="#tab1">Home</a></li>
+      <li><a href="./database.html" name="#tab2">Database</a></li>
+      <li><a href="./databasebrowser.html" name="#tab3">Dataset Browser</a></li>
+      <li><a href="./benchmarks.html" name="#tab4">Results</a></li>
+      <li><a href="./publications.html" name="#tab5">Papers</a></li>
+      <li><a href="./download.html" name="#tab6">Download</a></li>
+      <li><a href="./people.html" name="#tab7">Team</a></li>
+    </ul>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="images/teaser-image.png" border="0" width="100%">
+  </div>
+
+  <div class="section">
+    <h2 class="header">Publications</h2>
+    <div class="sectionBody">
+      <p>
+        <span style="color:rgb(42, 42, 42); font-size: medium; font-weight: bold">If you found our data and resources useful please cite our works.</span><br/>
+      </p>
+      <h3 class="year"><a name="tag2018"> 2018 </a></h3>
+      <div class="ref">
+        Joseph P. Robinson, Ming Shao, Yue Wu, Hongfu Liu, Timothy Gillis, Yun Fu<br>
+        <a href="papers/tpami-final.pdf">
+          Visual Kinship Recognition of Families in the Wild
+        </a> &nbsp;
+        <br>
+        IEEE Transactions on pattern analysis and machine intelligence (TPAMI)<br> Special Issue: Computational Face,
+        2018
+        <div class="links">
+          <a onclick="toggle_visibility('BIBfiwpamiSI2018')"><span style="color: red; ">Bibtex </span>
+          </a> | <a onclick="toggle_visibility('ABSfiwpamiSI2018')"><span style="color: red; ">Abstract </span>
+        </a> | <a href="papers/tpami-final.pdf"> PDF
+        </a> | <a href="papers/pami-appendix.pdf"> Appendix
+        </a> | <a href="papers/Supplemental_PP.pdf"> Supplemental PP
+        </a> | <a href="papers/Labeling_Demo.mov"> Video Demo
+        </a> | <a href="index.html">Web
+        </a>
+        </div>
+        <div style="display: none;" class="BibtexExpand" id="BIBfiwpamiSI2018">
+          <pre class="bibtex">@InProceedings{fiwpamiSI2018,
+              author    = "Robinson, Joseph P and Shao, Ming and Wu, Yue and Liu,
+                            Hongfu and Gillis, Timothy and Fu, Yun",
+              title     = "Visual Kinship Recognition of Families in the Wild",
+              journal   = "IEEE Transactions on pattern analysis and machine intelligence",
+              Keywords  = "Large-Scale Image Dataset, Kinship Verification, Family Classification,
+                            Semi-Supervised Clustering, Deep Learning",
+              year      = "2018"
+            }
+          </pre>
+        </div>
+        <div style="display: none;" class="AbstractExpand" id="ABSfiwpamiSI2018"><br>
+          We present the largest database for visual kinship recognition, <i>
+            Families In the Wild </i>(FIW), with over 13,000 family photos of 1,000
+          family trees with 4-to-38 members. It took only a small team to build
+          FIW with efficient labeling tools and work-flow. To extend FIW, we
+          further improved upon this process with a novel semi-automatic labeling
+          scheme that used annotated faces and unlabeled text metadata to discover
+          labels, which were then used, along with existing FIW data, for the
+          proposed clustering algorithm that generated label proposals for all
+          newly added data-- both processes are shared and compared in depth,
+          showing great savings in time and human input required. Essentially, the
+          clustering algorithm proposed is semi-supervised and uses labeled data
+          to produce more accurate clusters. We statistically compare FIW to
+          related datasets, which unarguably shows enormous gains in overall size
+          and amount of information encapsulated in the labels. We benchmark two
+          tasks, kinship verification and family classification, at scales
+          incomparably larger than ever before. Pre-trained CNN models fine-tuned
+          on FIW outscores other conventional methods and achieved
+          state-of-the-art on the renowned KinWild datasets. We also measure human
+          performance on kinship recognition and compare to a fine-tuned CNN.
+        </div>
+      </div>
+      <br>
+
+      <div class="ref">
+        Yue Wu, Zhengming Ding, Hongfu Liu, Joseph P Robinson, Yun Fu<br>
+        <a href="papers/fiw_fg2018.pdf">
+          Kinship Classification through Latent Adaptive Subspace
+        </a> &nbsp;
+        <br>
+        IEEE Automatic Face and Gesture Recognition, 2018
+        <div class="links">
+          <a onclick="toggle_visibility('BIBfg2018')"><span style="color: red; ">Bibtex</span>
+          </a> | <a onclick="toggle_visibility('ABSfg2018')"><span style="color: red; ">Abstract</span>
+        </a> | <a href="papers/fiw_fg2018.pdf"> PDF</a>
+        </div>
+        <div style="display: none;" class="BibtexExpand" id="BIBfg2018">
+          <pre class="bibtex">@InProceedings{wu2018kinship,
+          title =       {Kinship classification through latent adaptive subspace},
+          author =      {Wu, Yue and Ding, Zhengming and Liu, Hongfu and Robinson, Joseph and Fu, Yun},
+          booktitle =   {2018 IEEE International Conference on Automatic Face & Gesture Recognition},
+          pages =       {143--149},
+          year =        {2018},
+          organization= {IEEE}
+          }
+          </pre>
+        </div>
+
+        <div style="display: none;" class="AbstractExpand" id="ABSfg2018">
+          <br>
+          We tackle the challenging kinship classification problem. Different from kinship verification, which tells two
+          persons have certain kinship relation or not, kinship classification aims to identify the family that a person
+          belongs to. Beyond age and appearance gap across parents and children, the difficulties of kinship
+          classification lie in that any data of the children to be classified are unavailable in advance to help
+          training. To handle this challenge, an auxiliary database with complete parents and children modalities is
+          employed to uncover the parent-children latent knowledge. Specifically, we propose a Latent Adaptive Subspace
+          learning (LAS) to uncover the shared knowledge between two modalities so that the unseen test children are
+          implicitly modeled as latent factors for kinship classification. Moreover, person-wise and family-wise
+          constraints are designed to enhance the individual similarity and couple the parents and children within
+          families for discriminative features. Comprehensive experiments on two large kinship datasets show that the
+          proposed algorithm can effectively inherit knowledge from different databases and modalities and achieve the
+          state-of-the-art performance.
+        </div>
+      </div>
+      <br>
+      <h3 class="year"><a name="tag2017"> 2017 </a></h3>
+      <div class="ref">
+        Joseph P. Robinson, Ming Shao, Handong Zhao, Yue Wu, Timothy Gillis, Yun Fu<br>
+        <a href="papers/RFIW17.pdf">
+          Recognizing Families In the Wild (RFIW): Data Challenge Workshop in Conjunction with ACM MM 2017
+        </a><br>
+        Proceedings of the Workshop on Recognizing Families In the Wild, 2017
+        <div class="links">
+          <a onclick="toggle_visibility('BIBRFIW17')"><span style="color: red; ">Bibtex</span>
+          </a> | <a onclick="toggle_visibility('ABSRFIW17')"><span style="color: red; ">Abstract </span>
+        </a> | <a href="papers/RFIW17"> PDF
+        </a> | <a href="https://web.northeastern.edu/smilelab/RFIW2017/">Competition Page
+        </a>
+          <div style="display: none;" class="BibtexExpand" id="BIBRFIW17">
+          <pre class="bibtex">@Article{Robinson:2017:RFW:3134421.3134424,
+            author       = "Robinson, Joseph P. and Shao, Ming and Zhao, Handong and Wu, Yue and <br>
+                            Gillis, Timothy and Fu, Yun",
+            title        = "Recognizing Families In the Wild (RFIW): Data Challenge Workshop in
+                            Conjunction with ACM MM 2017",
+            booktitle    = "Proceedings of the 2017 Workshop on Recognizing Families In the Wild",
+            pages        = "5--12",
+            numpages     = "8",
+            isbn         = "978-1-4503-5511-7",
+            series       = "RFIW '17",
+            year         = "2017",
+            location     = "Mountain View, California, USA",
+            url          = "http://doi.acm.org/10.1145/3134421.3134424",
+            doi          = "10.1145/3134421.3134424",
+            acmid        = "3134424",
+            publisher    = "ACM",
+            address      = "New York, NY, USA",
+            keywords     = "acm mm workshop, algorithmic design, big data, convolutional neural networks,
+                              data challenge, deep learning, evaluation, facial recognition, family
+                              classification, kinship verification, large image database, large-scale
+                              kinship recognition, metric learning, visual understanding"
+            }
+          </pre>
+          </div>
+          <div style="display: none;" class="AbstractExpand" id="ABSRFIW17"><br>
+            Recognizing Families In the Wild (RFIW) is a large-scale, multi-track
+            automatic kinship recognition evaluation, supporting both kinship
+            verification and family classification on scales much larger than ever
+            before. It was organized as a Data Challenge Workshop hosted in
+            conjunction with ACM Multimedia 2017. This was achieved with the largest
+            image collection that supports kin-based vision tasks. In the end, we
+            use this manuscript to summarize evaluation protocols, progress made and
+            some technical background and performance ratings of the algorithms
+            used, and a discussion on promising directions for both research and
+            engineers to be taken next in this line of work.
+          </div>
+        </div>
+        <br>
+        <div class="ref">
+          Shuyang Wang, Joseph P. Robinson, Yun Fu<br>
+          <a href="papers/FG2017_version_final.pdf">
+            Kinship Verification on Families In The Wild with Marginalized Denoising Metric Learning
+          </a><br>
+          12th IEEE Conference on Automatic Face and Gesture Recognition, 2017
+          <div class="links">
+            <a onclick="toggle_visibility('BIBkinFG2017')"><span style="color: red; ">Bibtex </span>
+            </a> | <a onclick="toggle_visibility('ABSkinFG2017')"><span style="color: red; ">Abstract</span>
+          </a> | <a href="papers/FG2017_version_final.pdf"> PDF
+          </a> | <a href="papers/FG2017poster_DAE.pdf"> Poster
+          </a>
+          </div>
+          <div style="display: none;" class="BibtexExpand" id="BIBkinFG2017">
+          <pre class="bibtex">@InProceedings{kinFG2017,
+            author       = "Wang, Shuyang and Robinson, Joseph P and Fu, Yun",
+            title        = "Kinship Verification on Families In The Wild with Marginalized
+                            Denoising Metric Learning",
+            booktitle    = "Automatic Face and Gesture Recognition (FG), 2017 12th IEEE International
+                            Conference and Workshops on",
+            year         = "2017"
+            }
+          </pre>
+
+          </div>
+          <div style="display: none;" class="AbstractExpand" id="ABSkinFG2017"><br>
+            With our Families In the Wild (FIW) dataset, which consists of labels 1,
+            000 families in over 12, 000 family photos, we benchmarked the largest
+            kinship verification experiment to date. FIW, with its quality data and
+            labels for full family trees found worldwide, more accurately is the
+            true, global distribution of blood relatives with a total 378, 300 face
+            pairs of 9 different relationship types. This gives support to tackle
+            the problem with modern-day data-driven methods, which are imperative
+            due to the complex nature of tasks involving visual kinship recognition-
+            many hidden factors and less discrimination when considering face pairs
+            of blood relatives. For this, we propose a denoising auto-encoder based
+            robust metric learning (DML) framework and its marginalized version
+            (mDML) to explicitly preserve the intrinsic structure of data and
+            simultaneously endow the discriminative information into the learned
+            features. Large-scale experiments show that our method outperforms other
+            features and metric based approaches on each of the 9 relationship
+            types.
+          </div>
+        </div>
+        <br>
+        <div class="topshoot">
+          <!--<a href="#top">top</a>-->
+        </div>
+        <h3 class="year"><a name="tag2016"> 2016 </a></h3>
+
+        <div class="ref">
+          Joseph P. Robinson, Ming Shao, Yue Wu, Yun Fu<br>
+          <a href="http://localhost:63342/fiw_webpage/fiwDB/papers/acm-mm-short-final.pdf"
+             target="_blank">
+            Families in the Wild (FIW): Large-scale Kinship Image Database and Benchmarks
+          </a><br>
+          ACM on Multimedia Conference, 2016
+          <div class="links">
+            <a onclick="toggle_visibility('robinson2016families')"><span style="color: red; ">Bibtex</span>
+            </a> | <a onclick="toggle_visibility('robinson2016familiesAb')"><span style="color: red; ">Abstract</span>
+          </a> | <a href="papers/acm-mm-short-final.pdf"> PDF
+          </a> | <a href="http://localhost:63342/fiw_webpage/fiwDB/papers/ACM_MM_poster_reduced.pdf">Poster
+          </a> | <a href="download.html"> Dataset </a>
+          </div>
+          <div style="display: none;" class="BibtexExpand" id="robinson2016families">
+          <pre class="bibtex">@InProceedings{robinson2016families,
+            author      = "Robinson, Joseph P. and Shao, Ming and Wu, Yue and Fu, Yun",
+            title       = "Families In the Wild (FIW): Large-Scale Kinship Image Database and Benchmarks",
+            booktitle   = "Proceedings of the 2016 ACM on Multimedia Conference",
+            pages       = "242--246",
+            publisher   = "ACM",
+            year        = "2016"
+            }
+          </pre>
+          </div>
+          <div style="display: none;" class="AbstractExpand" id="robinson2016familiesAb"><br>
+            We present the largest kinship recognition dataset to date, Families in the Wild (FIW). Motivated by the
+            lack
+            of a single, unified dataset for kinship recognition, we aim to provide a dataset that captivates the
+            interest of the research community. With only a small team, we were able
+            to collect, organize, and label over 10,000 family photos of 1,000
+            families with our annotation tool designed to mark complex hierarchical
+            relationships and local label information in a quick and efficient
+            manner. We include several benchmarks for two image-based tasks, kinship
+            verification and family recognition. For this, we incorporate several
+            visual features and metric learning methods as baselines. Also, we
+            demonstrate that a pre-trained Convolutional Neural Network (CNN) as an
+            off-the-shelf feature extractor outperforms the other fea- ture types.
+            Then, results were further boosted by fine-tuning two deep CNNs on FIW
+            data: (1) for kinship verification, a triplet loss function was learned
+            on top of the network of pre-train weights; (2) for family recognition,
+            a family-specific softmax classifier was added to the network.
+          </div>
+        </div>
+
+        <br>
+        <div class="topshoot">
+        </div>
+        <h3 class="year"><a name="tag2012"> 2012 </a></h3>
+
+        <div class="ref">
+          Siyu Xia, Ming Shao, Jiebo Luo, Yun Fu<br>
+          <a href="https://web.northeastern.edu/smilelab/fiw/papers/Buffalo_TMM_Kinship.pdf">
+            Understanding Kin Relationships in a Photo
+          </a><br>
+          IEEE Transactions on Multimedia, 2012
+          <div class="links">
+            <a onclick="toggle_visibility('BIBBuffalo_TMM_Kinship')"><span style="color: red; ">Bibtex</span>
+            </a> | <a onclick="toggle_visibility('ABSBuffalo_TMM_KinshipB')"><span style="color: red; ">Abstract</span>
+          </a> | <a href="papers/Buffalo_TMM_Kinship.pdf"> PDF
+          </a> | <a href="http://www1.ece.neu.edu/~yunfu/research/Kinface/Kinface.htm">Web
+          </a>
+          </div>
+          <div style="display: none;" class="BibtexExpand"
+               id="BIBBuffalo_TMM_Kinship">
+          <pre class="bibtex">@InProceedings{Buffalo_TMM_Kinship,
+            author       = "Xia, Siyu and Shao, Ming and Luo, Jiebo and Fu, Yun",
+            title        = "Understanding Kin Relationships in a Photo",
+            journal      = "IEEE Transactions on Multimedia",
+            volume       = "14",
+            number       = "4",
+            year         = "2012",
+            pages        = "1046-1056"
+            }
+          </pre>
+          </div>
+          <div style="display: none;" class="AbstractExpand" id="ABSBuffalo_TMM_KinshipB"><br>
+            There is an urgent need to organize and manage images of people
+            automatically due to the recent explosion of such data on the Web in
+            general and in social media in particular. Beyond face detection and
+            face recognition, which have been extensively studied over the past
+            decade, perhaps the most interesting aspect related to human-centered
+            images is the relationship of people in the image. In this work, we
+            focus on a novel solution to the latter problem, in particular the kin
+            relationships. To this end, we constructed two databases: the first one
+            named UB KinFace Ver2.0, which consists of images of children, their
+            young parents and old parents, and the second one named FamilyFace.
+            Next, we develop a transfer subspace learning based algorithm in order
+            to reduce the significant differences in the appearance distributions
+            between children and old parents facial images. Moreover, by exploring
+            the semantic relevance of the associated metadata, we propose an
+            algorithm to predict the most likely kin relationships embedded in an
+            image. In addition, human subjects are used in a baseline study on both
+            databases. Experimental results have shown that the proposed algorithms
+            can effectively annotate the kin relationships among people in an image
+            and semantic context can further improve the accuracy.
+          </div>
+        </div>
+        <div class="interYear">&nbsp;</div>
+        <div class="topshoot">
+        </div>
+        <h3 class="year"><a name="tag2011"> 2011 </a></h3>
+        <div class="ref">
+          Siyu Xia, Ming Shao, Yun Fu<br>
+          <a href="papers/xia2011kinship.pdf">
+            Kinship Verification through Transfer Learning
+          </a><br>
+          International Joint Conference on Artificial Intelligence (IJCAI), 2011
+          <div class="links">
+            <a onclick="toggle_visibility('xia2011kinshipBib')"><span style="color: red; ">Bibtex </span>
+            </a> | <a onclick="toggle_visibility('xia2011kinshipAb')"><span style="color: red; "> Abstract</span>
+          </a> | <a href="papers/xia2011kinship.pdf"> PDF
+          </a>
+          </div>
+          <div style="display: none;" class="BibtexExpand" id="xia2011kinshipBib">
+              <pre class="bibtex">@InProceedings{xia2011kinship,
+                author       = "Xia, Siyu and Shao, Ming and Fu, Yun",
+                title        = "Kinship verification through transfer learning",
+                journal      = "IJCAI",
+                year         = "2011",
+                pages        = "2539--2544"
+                }
+            </pre>
+          </div>
+          <div style="display: none;" class="AbstractExpand" id="xia2011kinshipAb">
+            Because of the inevitable impact factors such as pose, expression,
+            lighting and aging on faces, identity verification through faces is
+            still an unsolved problem. Research on biometrics raises an even
+            challenging problem--is it possible to determine the kinship merely
+            based on face images? A critical observation that faces of parents
+            captured while they were young are more alike their children's compared
+            with images captured when they are old has been revealed by genetics
+            studies. This enlightens us the following research. First, a new kinship
+            database named UB KinFace composed of child, young parent and old parent
+            face images is collected from Internet. Second, an extended transfer
+            subspace learning method is proposed aiming at mitigating the enormous
+            divergence of distributions between children and old parents. The key
+            idea is to utilize an intermediate distribution close to both the source
+            and target distributions to bridge them and reduce the divergence.
+            Naturally the young parent set is suitable for this task. Through this
+            learning process, the large gap between distributions can be
+            significantly reduced and kinship verification problem becomesmore
+            discriminative. Experimental results show that our hypothesis on the
+            role of young parents is valid and transfer learning is effective to
+            enhance the verification accuracy.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

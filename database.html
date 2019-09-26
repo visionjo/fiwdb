@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0059)http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link href="./support/css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="./support/project.css" media="screen">
+  <link rel="stylesheet" type="text/css" media="screen" href="./support/iconize.css">
+  <script src="js/htmlinclude.js"></script>
+</head>
+<body>
+<div data-include="head.html"></div>
+<div id="content">
+  <div class="section head">
+    <h1>Families In the Wild: A Kinship Recognition Benchmark
+    </h1>
+    <div class="affiliations">
+      <a href="https://web.northeastern.edu/smilelab/">SMILE Lab, </a>
+      <a href="http://www.ece.neu.edu/">Department of Electrical and Computer Engineering, </a>
+      <a href="https://www.northeastern.edu/">Northeastern University</a>
+    </div>
+    <ul id="tabs">
+      <li><a href="./index.html" name="#tab1">Home</a></li>
+      <li><a href="./database.html" name="#tab2">Database</a></li>
+      <li><a href="./databasebrowser.html" name="#tab3">Dataset Browser</a></li>
+      <li><a href="./benchmarks.html" name="#tab4">Results</a></li>
+      <li><a href="./publications.html" name="#tab5">Papers</a></li>
+      <li><a href="./download.html" name="#tab6">Download</a></li>
+      <li><a href="./people.html" name="#tab7">Team</a></li>
+    </ul>
+  </div>
+  <img src="images/teaser-image.png" border="0" width="100%">
+  <div class="section">
+    <h2 class="header">Families In The Wild (FIW) Database</h2>
+    <div class="sectionBody">
+      <div>
+        FIW is the <strong>largest</strong> and <strong>most</strong> <strong>comprehensive</strong> database
+        available for kinship recognition.
+        FIW is made up of <strong>11,932</strong> natural family photos of <strong>1,000</strong>
+        families-- nearly 10x more than the next-to-largest, Family-101 [7] database. Also, we have
+        <span style="font-weight:700">656,954&nbsp;</span>
+        <span>image pairs split between the 11 relationship (see Figure 1), which is much
+              larger than the 2nd to largest Kin-Wild II with 2,000 pairs for only 4 kinship types.
+              For more information see <a href="papers/tpami-final.pdf">PAMI.</a>
+        </span>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p>The goal of kinship verification is to determine whether a pair of faces are blood relatives or not.
+            This task has seen lots of attention, which mainly focus on&nbsp;<em>parent-child&nbsp;</em>pair-wise
+            types--
+            <span style="color:rgb(42, 42, 42)">father-daughter (F-D), father-son (F-S), mother-daughter (M-D), mother-son (M-S)--</span>
+            though some have also focused on siblings pairs--&nbsp;brother-brother (B-B), sister-sister (S-S). This
+            data supports all prior pair-wise types in sets much larger than previously offered to the research
+            community. In
+            addition, we introduce <em>grandparent-grandchild</em>&nbsp;pairs for the first time--
+            grandfather-granddaughter (GF-GD),
+            grandfather-grandson (GF-GS), &nbsp;grandmother-granddaughter (GM-GD), grandmother-grandson (GM-GS). As
+            stated on
+            <a href="benchmarks.html" target="_blank">the results page</a>, our top performing benchmark scored an
+            average accuracy of about 71%, so not only is there room for improvement, but also a need for more
+            reliable systems
+            before such technology is employed for practical purposes. This large-scale kinship verification challenge
+            is made possible with the recently introduced FIW database. Kinship verification has the potential to
+            improve
+            social media tagging, ancestry/genealogy site suggestions, along with many other applications in
+            technology and media.
+          </p>
+        </div>
+        <div class="column">
+          <figure>
+            <img align="right" border=1px src="images/facepairs.png" style="width:100%">
+            <figcaption>
+              <span style="font-size: x-small;">Samples of 11 pair types of FIW. Each type is of a unique pair randomly selected from a set of
+                diverse families to show variation in ethnicity, while four faces of each individual depict age variations.
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div>
+        <p>FIW is made-up of 11,932 family photos that span 1,000 different families, with the data distributed
+          fairly: an average of about 12 images per family, each with at least 3 and as many as 38 members. The FIW
+          database is
+          contains rich labels capturing the complex hierarchical relationships inherited throughout families
+          (i.e., family trees).
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="wsite-image wsite-image-border-none "
+           style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+        <a>
+          <img alt="Picture" src="images/famimages.png" style="width:auto;max-width:90%"/>
+        </a>
+        <div style="display:block;font-size:90%"> Sample family photos from FIW for 27 of the 1, 000.
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="wsite-image wsite-image-border-none "
+           style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+        <a>
+          <img src="images/royalftree.png" alt="Picture"
+               style="width:auto;max-width:85%"/>
+        </a>
+        <a>
+          <img src="images/royalimages.png" alt="Picture"
+               style="width:auto;max-width:80%"/>
+        </a>
+        <div style="display:block;font-size:90%"> Royal family tree and subset of family photos.
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="wsite-image wsite-image-border-none"
+           style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+      </div>
+    </div>
+    <div>
+      <div class="wsite-image wsite-image-border-none"
+           style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+        <a>
+          <img src="images/family_montage_big.png" alt="Picture" style="width:auto;max-width:95%"/>
+        </a>
+        <div style="display:block;font-size:90%"> Randomly selected families of FIW and a subset of their family
+          photos.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
