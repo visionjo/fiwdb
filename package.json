@@ -24,7 +24,7 @@
     "modernizr": "3.6.0",
     "normalize.css": "8.0.0",
     "run-sequence": "^2.2.1",
-    "ssri": "^6.0.0",
+    "ssri": "^8.0.1",
     "strip-json-comments": "^2.0.1",
     "travis-after-all": "^1.4.5"
   },
